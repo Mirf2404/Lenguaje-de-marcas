@@ -1,0 +1,11 @@
+body {
+    background-color: lightblue;
+    text-align: center;
+    size: 200px;
+    text-decoration: solid;
+  }
+  
+  h1 {
+    background-color:  rgb(163, 165, 42);
+    border-style: double;
+  }
