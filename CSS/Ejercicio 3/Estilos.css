@@ -1,5 +1,11 @@
-div{
+div em{
 
-color: red;
+color: yellow;
 
+}
+p em{
+    color:aqua;
+}
+em{
+    color:red;
 }

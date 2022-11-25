@@ -1,0 +1,11 @@
+p {
+    border-style: solid;
+    border-color: black;
+    color:aqua;
+}
+p.pares {
+    background-color: yellow; 
+}
+p.inp{
+    background-color: gray; 
+}
