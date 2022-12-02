@@ -1,0 +1,37 @@
+/*10. Crear una web que presente tres párrafos. Cada párrafo debe tener anchura,
+interlineado, estilo, tamaño y fuente de letra distintos. Además, en el primero el
+texto debe estar alineado a la izquierda, en el segundo a la derecha y en el tercero al
+centro. Todos deben tener la primera letra capital y la primera línea indentada. */
+
+
+
+#p1{
+    text-align:left;
+    text-indent:50px;
+    font-style: oblique;
+    font: 1em Monospace;
+    width: 200px;
+    font-size: small;
+    float: left;
+
+}
+#p2{
+    text-align: right;
+    text-indent:50px;
+    font-style: oblique;
+    font: 1em Fantasy;
+    font-size: medium;
+    float: right;
+    width: 300px;
+}
+#p3{
+    text-align: center;
+    text-indent:50px;
+    font-style: oblique;
+    font: 1em Serif;
+    width: 400px;
+    font-size: large;
+position: absolute;
+left: 500px;
+
+}
