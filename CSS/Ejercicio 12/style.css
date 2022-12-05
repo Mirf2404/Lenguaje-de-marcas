@@ -9,31 +9,75 @@ Esta misma página será enlazada desde el primer elemento del menú. El segundo
 elemento, por su parte, enlazará con una página de igual cabecera y menú, en cuyo
 cuerpo aparecerán contenidos del Barcelona FC (texto e imágenes). El tercer enlace
 se hará a una página similar a la del segundo enlace con contenidos del Real Madrid. */
+#p1{
+background-color: blueviolet;
+text-align: center;
+border: 2em;
+border-radius: 50%;
+margin: 2em;
 
+}
+#p2{
+    background-color: blueviolet;
+    text-align: center;
+    border: 2em;
+    border-radius: 50%;
+    margin: 2em;
+    
+    }
+    #p3{
+        background-color: blueviolet;
+        text-align: center;
+        border: 2em;
+        border-radius: 50%;
+        margin: 2em;
+       
+        }
+#nav{
+    background-color: rgb(223, 71, 228);
+    position: absolute;
+width: 15em;
+height: 15em;
 
+}
 #b1{
     
     width: 70%;
-    height: 110%;
+    height: 120%;
     position:absolute;
     left: 20%;   
     background-color: aqua;
 }
-p.parrafo{
-  
+p{
+   
 padding: 5px;
 padding-left: 20px;
 padding-right: 20px;
 }
-#Img3060{
-    margin-top: 20em;
-    
 
-float: left;
+#Img3060{
+
+
+    width: 10em;
+
+float:left;
 
 
 
 }
+#Img6600{
+    width: 10em;
+margin-bottom: 5em;
+    float:right;
+
+}
+#footer{
+    position: absolute;
+    left: 55em;
+
+}
+
+
 
 
 
