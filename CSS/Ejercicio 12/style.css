@@ -1,0 +1,42 @@
+/*12. Maquetar una web con una capa contenedora, que tenga una capa cabecera de la
+anchura total de la página y debajo dos capas. La de la izquierda debe ocupar un
+20% de la página, y la de la derecha tendrá una barra de desplazamiento vertical para los contenidos. 
+Aplicar la maqueta para crear un sitio web de título DERBY,
+con un menú formado por tres enlaces situados en la capa de la izquierda. El primer
+enlace con el texto “Inicio”, el segundo “Barcelona FC” y el tercero “Real Madrid”.
+En la página inicial debe aparecer un texto con información general sobre el Derby.
+Esta misma página será enlazada desde el primer elemento del menú. El segundo
+elemento, por su parte, enlazará con una página de igual cabecera y menú, en cuyo
+cuerpo aparecerán contenidos del Barcelona FC (texto e imágenes). El tercer enlace
+se hará a una página similar a la del segundo enlace con contenidos del Real Madrid. */
+
+
+#b1{
+    
+    width: 70%;
+    height: 110%;
+    position:absolute;
+    left: 20%;   
+    background-color: aqua;
+}
+p.parrafo{
+  
+padding: 5px;
+padding-left: 20px;
+padding-right: 20px;
+}
+#Img3060{
+    margin-top: 20em;
+    
+
+float: left;
+
+
+
+}
+
+
+
+
+
+
