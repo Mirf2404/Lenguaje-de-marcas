@@ -1,0 +1,33 @@
+#capa1{
+font-weight: 20%;
+
+background-color: aquamarine;
+}
+#img{
+    width: 5em;
+  
+    padding-left: 35em;
+}
+#cabeza{
+    background-color: brown;
+    text-align:start;
+    
+}
+#nav{
+    font-size: 2em;
+}
+#capa2{
+    background-color: bisque;
+    position: absolute;
+    text-align: center;
+    left: 20%;
+    
+   
+    width: 74.2em;
+    height: auto;
+}
+.p1{
+    text-align: left;
+margin-left: 5em;
+margin-right: 5em;
+}
