@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" style = "background-color: rgb(214, 199, 171);"> </html> 
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    
+
+        <div id="capa1">
+            <h1>TELEBIRRIA</h1>
+            <h2>PARA REALIZAR SU PEDIDO, RELLENE EL FORMULARIO</h2>
+        </div>
+
+        <div id = "capa2">
+        <p>
+        <form>
+            <fieldset>
+                <legend><strong>Datos personales y de envío</strong></legend>
+                <label> Nombre:</label><br>
+                <input type="text"><br>
+                <label>Apellidos:</label><br>
+                <input type="text"><br>
+                <label> Domicilio:</label><br>
+                <input type="text"><br>
+                <label>Localidad:</label><br>
+                <input type="text"><br>
+                <label>Código Postal:</label><br>
+                <input type="text"><br>
+                <label>Teléfono:</label><br>
+                <input type="text"><br>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Eliga la opción de entrega</strong></legend>
+                <input type="radio" name="entrega">
+                <label> Recoger en el local </label> <br>
+                <input type="radio" name="entrega">
+                <label> Enviar a domicilio </label> <br>
+            </fieldset>
+            <fieldset>
+                <legend><strong>¿Quiere que le enviemos muestras ofertas?</strong></legend>
+                <input type="checkbox" name="ofertas">
+                <label for>Enviar al domicilio </label> <br>
+                <input type="checkbox" name="ofertas">
+                <label> Enviar por email </label> <br>
+            </fieldset>
+        </div>
+            <div id="capa3">
+
+                <fieldset>
+                    <legend><strong>Elija su meú</strong></legend>
+                    <label>Tamaño del bocadillo</label> <br>
+                    <select id="tamaño" size=4>
+                        <option> pequeño </option>
+                        <option value="mediano" selected="selected"> mediano</option>
+                        <option> grande </option>
+                        <option> enorme </option>
+                    </select>
+                    <br>
+                    <label>Contenido del bocaillo</label> <br>
+                    <select id="tamaño" size=4>
+                        <option> anchoas </option>
+                        <option> calamares</option>
+                        <option> mejillones </option>
+                        <option> jamon </option>
+                    </select>
+            </div>
+            <br><br>
+            
+            <div id = "sugerencia">
+            <label> Puede añadir alguna sugerencia </label> <br><br>
+            
+              <textarea cols="50" rows="4"></textarea>
+            
+            <input id="sugenv" type="submit" value="enviar datos">
+            </select>
+            </fieldset>
+            </div>
+        </form>
+        
+        </p>
+    
+</body>
+
+</html>

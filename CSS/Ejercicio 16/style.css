@@ -1,0 +1,47 @@
+form {
+    font-family: sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  input,
+  label {
+    display:inline;
+    margin: 10px 0;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+#capa3{
+  position: absolute;
+  left: 60em;
+  top: 10em;
+
+    
+}
+#sugerencia{
+  position: absolute;
+  left: 60em;
+  top: 25em;
+  
+
+    
+}
+#sugenv {
+  float:initial ;
+ 
+ 
+}
+
+#sec2 {
+    float:left;
+    float:right;
+   
+ }
+  

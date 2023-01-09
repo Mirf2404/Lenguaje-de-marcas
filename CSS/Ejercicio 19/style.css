@@ -1,0 +1,30 @@
+header{
+   
+   background-color:rgb(47, 47, 72);
+   width: 800px;
+   height: 11em;
+   margin:0 auto ;
+}
+header h2{
+    text-align: center;
+   margin-top: 5;
+   color: rgb(255, 255, 255);
+}
+body section{
+    background-color:rgb(30, 47, 72);
+    width: 800px;
+    height: 20em;
+   margin:0 auto ;
+   padding-top: 1em;
+}
+body section p{
+    width: 31em;
+    margin-top: 2em;
+    margin-left: 2em;
+}
+footer{
+    
+   width: 800px;
+   height: 11em;
+   margin:0 auto ;
+}

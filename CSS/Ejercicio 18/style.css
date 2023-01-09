@@ -1,0 +1,177 @@
+html{
+    background-color: aquamarine;
+}
+header{
+   
+    width: 100%;
+    height: 10em;
+    background-color: rgb(71, 68, 68);
+   border: 5px;
+   border-style:groove ;
+   border-radius: 10%;
+
+}
+header h1{
+
+padding-left: 16em;
+padding-top: 1em;
+text-transform: uppercase;
+
+}
+header img{
+    float: left;
+    padding-left: 10px;
+    width: 10em;
+    height: 10em;
+}
+body #cuerpo{
+    padding-left: 15em;
+
+   width:80em ;
+   height:90em ;
+}
+.grafica1{
+float: left;
+background-color: bisque;
+width:30em ;
+height:20em ;
+border-style: solid;
+border-radius: 5%;
+border-color:black ;
+margin-right: 20px;
+margin-top: 5px;
+
+}
+.grafica2{
+    float: left;
+    background-color: bisque;
+    width:30em ;
+    height:20em ;
+    border-style: solid;
+    border-radius: 5%;
+    border-color:black ;
+    margin-right: 20px;
+    margin-top: 5px;
+    
+    
+    }
+#img{
+    padding-top: 3em;
+    width:15em ;
+    height:15em ; 
+    float: left;
+    
+}
+#img2{
+    padding-top: 4em;
+    width:15em ;
+    height:13em ; 
+    float: left;
+    
+}
+#img4{
+    padding-top: 3em;
+    width:15em ;
+    height:15em ; 
+    float: left;
+    
+}
+#img5{
+    padding-top: 3em;
+    width:15em ;
+    height:15em ; 
+    float: left;
+    
+}
+#img6{
+    padding-top: 5em;
+    width:15em ;
+    height:10em ; 
+    float: left;
+    
+}
+.txtdiv {
+    float: right;
+    width: 13em;
+    height: 15em;
+    padding-right: 2em  ;
+    
+}
+div h5{
+text-align: center;
+
+}
+.txtdiv p{
+    float: right;
+    margin-top: 1px;
+
+}
+.txtdiv ul .li1{
+    
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+border: 2px solid black;
+border-radius: 50%;
+background-color: black;
+
+
+}
+.txtdiv ul .li2{
+    
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+border: 2px solid black;
+border-radius: 50%;
+background-color: white;
+
+}
+.txtdiv ul .li3{
+    
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+border: 2px solid black;
+border-radius: 50%;
+background-color:deeppink;
+
+}
+.txtdiv ul .li4{
+    
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+border: 2px solid black;
+border-radius: 50%;
+background-color:rgb(20, 255, 28);
+
+}
+.txtdiv ul .li5{
+    
+    margin-top: 40px;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    display:inline-block;
+border: 2px solid black;
+border-radius: 50%;
+background-color:rgb(230, 34, 20);
+
+}
+.img2{
+    width: 1em;
+    height: 1em;
+    float: right;
+    padding-right: 5px;
+    padding-top: 5px;
+    
+}

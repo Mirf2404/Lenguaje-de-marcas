@@ -1,0 +1,68 @@
+
+
+
+div{
+width: 600px;
+height: 20em;
+float: left;
+background-color: antiquewhite;
+;
+}
+#imagen1{
+    float: left;
+    
+    width: 18em;
+    height: 20em;
+
+}
+h3{
+    
+    float:left;
+  
+
+
+}
+#imagen2{
+    
+float: right;
+
+    width: 1em;
+    height: 1em;
+    
+   
+
+}
+#precio{
+   
+float: right;
+
+clear: both;
+  
+  
+ 
+}
+#si{
+
+    float: right;
+    width: 200px;
+   
+   
+}
+#colores{
+float:left;
+clear: both;
+    
+    
+    
+}
+#colores li{
+    
+    background-color: aqua;
+    border-radius: 50%;
+    border: 1em;
+    border-color: black;
+    width: 10em;
+    height: 10em;
+    margin-top: 12em;
+    
+}
