@@ -1,0 +1,73 @@
+<xs:schema xmlns="EJ1" targetNamespace="EJ1" elementFormDefault="qualified"   xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="mensaje">
+        
+    
+    
+    
+        <xs:complexType>
+
+            <xs:sequence>
+                <xs:element name="remitente"  minOccurs="0" maxOccurs="unbounded">
+                 <xs:complexType>
+
+                    <xs:sequence>
+                        <xs:element  name="nombre" type="xs:string"/>
+                        <xs:element  name="email" type="xs:string"/>
+                    </xs:sequence>
+    
+                 </xs:complexType>
+
+                </xs:element> 
+
+
+            <xs:element name="destinatario"  minOccurs="0" maxOccurs="unbounded">
+
+                    <xs:complexType>
+
+                        <xs:sequence>
+                            <xs:element  name="nombre" type="xs:string"/>
+                            <xs:element  name="email">
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:string">
+                                        <xs:pattern value="(\. text+)*@text+(\.text+)*"/>
+                                    </xs:restriction>
+                                </xs:simpleType>
+                            
+                            </xs:element>
+                        </xs:sequence>
+
+                    </xs:complexType>
+
+                </xs:element> 
+
+
+                <xs:element name="asunto"/>
+                <xs:element name="texto">
+                 <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="parrafo" type="xs:string"></xs:element>
+                    </xs:sequence>
+                 </xs:complexType>
+
+                </xs:element>
+            </xs:sequence>
+    
+        </xs:complexType>
+
+       
+            
+        
+            
+
+        
+
+    
+
+   
+
+
+    
+       
+  
+    </xs:element>
+</xs:schema>

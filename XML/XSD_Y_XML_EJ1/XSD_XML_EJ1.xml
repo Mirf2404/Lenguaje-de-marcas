@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mensaje xmlns="EJ1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="EJ1 Schema.xsd"  >
+
+<remitente>
+    <nombre></nombre>
+    <email></email>
+</remitente>
+<destinatario>
+    <nombre></nombre>
+    <email>
+        a.aa@aaaaa
+
+    </email>
+</destinatario>
+<asunto></asunto>
+<texto>
+    <parrafo></parrafo>
+</texto>
+</mensaje>
