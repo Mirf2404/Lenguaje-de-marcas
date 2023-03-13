@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="estilo_xml.css"?>
+<playlist xmlns:miautor="elAutor" xmlns="LasCanciones">
+<cancion xmlns="MejorCancion">
+Thriller
+<duracion>3:30</duracion>
+<autor>Michael Jackson</autor>
+<album>Thriller</album>
+<año>1982</año>
+
+</cancion>
+<cancion>
+Bohemian Rhapsody
+<duracion>7:00</duracion>
+<autor>Queen</autor>
+<album>A night at the opera</album>
+<año>1975</año>
+
+</cancion>
+<cancion>
+&gt;3
+<duracion>2:00</duracion>
+<autor>Bad Bunny</autor>
+<album>YHLQMDLG</album>
+<año>2020</año>
+
+</cancion>
+</playlist>

@@ -1,0 +1,64 @@
+cancion{
+    display: block;
+    position: relative;
+  color: #000;
+  margin-top: 25px;
+  margin-left: 15px;
+  font-size: 2em;
+  top: 10px;
+}
+titulo{
+    display: block;
+    position: relative;
+  color: #000;
+  top: 10px;
+}
+compositores{
+    display: block;
+    position: relative;
+  color: #000;
+  top: 10px;
+}
+compositor{
+  
+  display: block;
+  position: relative;
+color: #000;
+top: 10px;
+}
+nombres{
+    display: block;
+    position: relative;
+  color: #000;
+  top: 10px;
+}
+apellidos{
+    display: block;
+    position: relative;
+  color: #000;
+  top: 10px;
+}
+productores{
+  display: block;
+  position: relative;
+color: #000;
+top: 10px;
+}
+productor{
+  display: block;
+  position: relative;
+color: #000;
+top: 10px;
+}
+sello{
+  display: block;
+  position: relative;
+color: #000;
+top: 2em;
+}
+artista{
+  display: block;
+  position: relative;
+color: #000;
+top: 2em;
+}

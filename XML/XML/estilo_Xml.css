@@ -1,0 +1,36 @@
+@namespace miautor url("elAutor");
+@namespace mimusica url("LasCanciones");
+cancion{
+    display: block;
+    position: relative;
+  color: #000;
+  margin-top: 25px;
+  margin-left: 15px;
+  font-size: 2em;
+  top: 10px;
+}
+duracion{
+    display: block;
+    position: relative;
+  color: #000;
+}
+autor{
+    display: block;
+    position: relative;
+  color: #000;
+}
+autor[papel=Propietario]{
+  display: block;
+  position: relative;
+color: #000;
+}
+album{
+    display: block;
+    position: relative;
+  color: #000;
+}
+año{
+    display: block;
+    position: relative;
+  color: #000;
+}
