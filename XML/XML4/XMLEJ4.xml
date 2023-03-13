@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<example xmlns="Ejemplo" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="Ejemplo XMLSCHEMA.xsd"  >
+<etiqueta1>hola</etiqueta1>
+<etiqueta2></etiqueta2>
+
+
+
+</example>
