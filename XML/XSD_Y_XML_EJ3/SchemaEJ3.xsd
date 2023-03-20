@@ -1,0 +1,50 @@
+<xs:schema xmlns="EJ3" targetNamespace="EJ3" elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="cancion">
+    
+    </xs:element>
+
+    <xs:complexType name="T_Cancion">
+        <xs:sequence>
+            <xs:element name="titulo" type="xs:string" />
+            <xs:element name="compositores" type="tipoComp">
+
+            </xs:element>
+            <xs:element name="productores" type="tipoComp2" />
+            <xs:element name="sello" type="xs:string" />
+            <xs:element name="artista" type="xs:string" />
+
+
+        </xs:sequence>
+
+        <xs:attribute name="duracion" type="xs:time" />
+        <xs:attribute name="año" type="xs:gYear" />
+    </xs:complexType>
+
+
+    <xs:complexType name="tipoComp">
+
+        <xs:sequence>
+            <xs:element name="compositor" type="tipocompos" />
+        </xs:sequence>
+
+    </xs:complexType>
+
+    <xs:complexType name="tipoComp2">
+
+        <xs:sequence>
+            <xs:element name="productor" type="tipocompos" />
+        </xs:sequence>
+
+    </xs:complexType>
+    <xs:complexType name="tipocompos">
+
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string" />
+            <xs:element name="apellidos" type="xs:string" />
+        </xs:sequence>
+
+    </xs:complexType>
+
+</xs:schema>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cancion xmlns="EJ3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="EJ3 SchemaEJ3.xsd"  >
+
+<titulo>Give it 2 me </titulo>
+<compositores>
+<compositor>
+
+    <nombres>Pharrell</nombres>
+    <apellidos>Williams</apellidos>
+</compositor>
+</compositores>
+
+<productores>
+    <productor>
+        <nombres>Pharrell</nombres>
+        <apellidos>Williams</apellidos>
+    </productor>
+</productores>
+
+<sello>Warner Bros. Records</sello>
+<artista>Madonna</artista>
+
+
+
+
+
+
+
+
+
+
+
+
+</cancion>
