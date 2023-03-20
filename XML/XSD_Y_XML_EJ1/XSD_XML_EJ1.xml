@@ -3,14 +3,11 @@
 
 <remitente>
     <nombre></nombre>
-    <email></email>
+    <email>hola@gmail.com</email>
 </remitente>
 <destinatario>
     <nombre></nombre>
-    <email>
-        a.aa@aaaaa
-
-    </email>
+    <email>hola@gmail.com</email>
 </destinatario>
 <asunto></asunto>
 <texto>
