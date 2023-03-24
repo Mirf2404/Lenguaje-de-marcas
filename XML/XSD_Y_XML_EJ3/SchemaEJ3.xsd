@@ -1,11 +1,16 @@
 <xs:schema xmlns="EJ3" targetNamespace="EJ3" elementFormDefault="qualified"
     xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
-    <xs:element name="cancion">
-    
+    <xs:element name="cancion" type="T_Cancion">
+        
+        
     </xs:element>
-
+   
+      
     <xs:complexType name="T_Cancion">
+        
+            
+      
         <xs:sequence>
             <xs:element name="titulo" type="xs:string" />
             <xs:element name="compositores" type="tipoComp">
@@ -18,10 +23,10 @@
 
         </xs:sequence>
 
-        <xs:attribute name="duracion" type="xs:time" />
-        <xs:attribute name="año" type="xs:gYear" />
+        <xs:attribute name="duracion" type="xs:string" />
+        <xs:attribute name="anio" type="xs:gYear" />
     </xs:complexType>
-
+ 
 
     <xs:complexType name="tipoComp">
 
