@@ -1,0 +1,83 @@
+<!-- a) Un atributo “titulo” que tome como valor el título genérico del “CD”.
+b) Dos elementos:
+ Un elemento “fecha” que almacena la fecha de salida al mercado del “CD”.
+ Un elemento “canciones” que a su vez puede contener varios elementos “cancion”.
+c) Agregar los cambios producidos en la representación de la estructura, en un nuevo esquema. -->
+
+<xs:schema xmlns="EJ4" targetNamespace="EJ4" elementFormDefault="qualified"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="CD" type="cdtype">
+        
+    </xs:element>
+    <xs:complexType name="cdtype" >
+   
+    <xs:sequence>
+       
+            <xs:element name="fecha" type="xs:date" />
+            <xs:element name="canciones">
+                <xs:complexType >
+                <xs:sequence>
+                 <xs:element name="cancion" type="T_Cancion"/>
+        
+        
+                
+                </xs:sequence>
+                </xs:complexType>
+               
+                
+            </xs:element>
+
+
+
+        </xs:sequence>
+        <xs:attribute name="titulo" type="xs:string" default="CD"/>
+  
+    </xs:complexType>
+
+
+  
+<xs:complexType name="T_Cancion">
+    
+        
+  
+    <xs:sequence>
+        <xs:element name="titulo" type="xs:string" />
+        <xs:element name="compositores" type="tipoComp">
+
+        </xs:element>
+        <xs:element name="productores" type="tipoComp2" />
+        <xs:element name="sello" type="xs:string" />
+        <xs:element name="artista" type="xs:string" />
+
+
+    </xs:sequence>
+
+    <xs:attribute name="duracion" type="xs:string" />
+    <xs:attribute name="anio" type="xs:gYear" />
+</xs:complexType>
+
+
+<xs:complexType name="tipoComp">
+
+    <xs:sequence>
+        <xs:element name="compositor" type="tipocompos" />
+    </xs:sequence>
+
+</xs:complexType>
+
+<xs:complexType name="tipoComp2">
+
+    <xs:sequence>
+        <xs:element name="productor" type="tipocompos" />
+    </xs:sequence>
+
+</xs:complexType>
+<xs:complexType name="tipocompos">
+
+    <xs:sequence>
+        <xs:element name="nombre" type="xs:string" />
+        <xs:element name="apellidos" type="xs:string" />
+    </xs:sequence>
+
+</xs:complexType>
+</xs:schema>
