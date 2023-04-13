@@ -8,7 +8,7 @@
         <nacionalidades>
             <nacionalidad>asdf</nacionalidad>
         </nacionalidades>
-        <num_identificacion>asdf</num_identificacion>
+        <num_identificacion>74541588Z</num_identificacion>
         <foto_archivo>afsd</foto_archivo>
     </datos_perso>
     <datos_contacto>
@@ -59,7 +59,7 @@
     <competencias_socio_profesionales>
         <competencia>
             <nombre></nombre>
-            <nivel></nivel>
+            <nivel>1</nivel>
         </competencia>
     </competencias_socio_profesionales>
     <datos_adicionales>

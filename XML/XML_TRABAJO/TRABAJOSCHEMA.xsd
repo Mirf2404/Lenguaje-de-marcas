@@ -2,20 +2,19 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" targetNamespace="ejer" xmlns="ejer" >
     <xs:element name="curriculum" type="q">
        
-    </xs:element> 
+    </xs:element>
     <xs:complexType name="q">
-            <xs:sequence>
-                <xs:element name="datos_perso" type="datos_personales1"/>
-                <xs:element name="datos_contacto" type="datos_contacto1"/>
-                <xs:element name="formacion_academica" type="formacion_academica1"/>
-                <xs:element name="idiomas" type="idiomas1"/>
-                <xs:element name="experiencia_laboral" type="experiencia_laboral1"/>
-                <xs:element name="competencias_socio_profesionales" type="competencias_socio_profesionales1"/>
-                <xs:element name="datos_adicionales" type="datos_adicionales1"/>
-            </xs:sequence>
-        </xs:complexType>
-     <!-- LOS DATOS PERSONALES -->
-     
+        <xs:sequence>
+            <xs:element name="datos_perso" type="datos_personales1"/>
+            <xs:element name="datos_contacto" type="datos_contacto1"/>
+            <xs:element name="formacion_academica" type="formacion_academica1"/>
+            <xs:element name="idiomas" type="idiomas1"/>
+            <xs:element name="experiencia_laboral" type="experiencia_laboral1"/>
+            <xs:element name="competencias_socio_profesionales" type="competencias_socio_profesionales1"/>
+            <xs:element name="datos_adicionales" type="datos_adicionales1"/>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- LOS DATOS PERSONALES -->
     <xs:complexType name="datos_personales1">
         <xs:sequence>
             <xs:element name="nombre" type="xs:string"/>
@@ -23,17 +22,17 @@
             <xs:element name="fecha_nacimiento" type="xs:date"/>
             <xs:element name="lugar_nacimiento" type="xs:string"/>
             <xs:element name="nacionalidades" type="nacionalidades1"/>
-            <xs:element name="num_identificacion" type="xs:string"/>
+            <xs:element name="num_identificacion" type="tipo_nif"/>
             <xs:element name="foto_archivo" type="xs:string"/>
         </xs:sequence>
     </xs:complexType>
-      <!-- LA NACIONALIDAD -->
+    <!-- LA NACIONALIDAD -->
     <xs:complexType name="nacionalidades1">
         <xs:sequence>
             <xs:element name="nacionalidad" type="xs:string" />
         </xs:sequence>
     </xs:complexType>
-     <!-- DATOS DE CONTACTO -->
+    <!-- DATOS DE CONTACTO -->
     <xs:complexType name="datos_contacto1">
         <xs:sequence>
             <xs:element name="tipo_via" type="xs:string"/>
@@ -52,15 +51,13 @@
             <xs:element name="redes_sociales" type="redes_sociales1" minOccurs="0"/>
         </xs:sequence>
     </xs:complexType>
-
-     <!-- LAS REDES SOCIALES -->
+    <!-- LAS REDES SOCIALES -->
     <xs:complexType name="redes_sociales1">
         <xs:sequence>
             <xs:element name="red_social" type="xs:string" maxOccurs="unbounded"/>
         </xs:sequence>
     </xs:complexType>
-
-     <!-- LAS FORMACIONES ACADEMICAS -->
+    <!-- LAS FORMACIONES ACADEMICAS -->
     <xs:complexType name="formacion_academica1">
         <xs:sequence>
             <xs:element name="estudios" maxOccurs="unbounded">
@@ -82,19 +79,20 @@
                 <xs:complexType>
                     <xs:sequence>
                         <xs:element name="nombre" type="xs:string"/>
+                        <!-- NIVEL IDIOMA ALTO/MEDIO/BAJO -->
                         <xs:element name="expresion_oral" type="nivel_idioma" minOccurs="0"/>
                         <xs:element name="comprension_oral" type="xs:string" minOccurs="0"/>
                         <xs:element name="expresion_escrita" type="xs:string" minOccurs="0"/>
                         <xs:element name="comprension_escrita" type="xs:string" minOccurs="0"/>
                         <xs:element name="titulo_acreditativo" type="xs:string" minOccurs="0"/>
-                         <!-- NIVEL IDIOMA ALTO/MEDIO/BAJO -->
+                        <!-- NIVEL TITULO -->
                         <xs:element name="nivel_titulo" type="nivel_titulo" minOccurs="1"/>
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-     <!-- LA EXPERIENCIA LABORAL -->
+    <!-- LA EXPERIENCIA LABORAL -->
     <xs:complexType name="experiencia_laboral1">
         <xs:sequence>
             <xs:element name="experiencia" maxOccurs="unbounded">
@@ -109,21 +107,37 @@
             </xs:element>
         </xs:sequence>
     </xs:complexType>
-     <!-- LAS competencias socio profesionales-->
+    <!-- Las competencias socio profesionales-->
     <xs:complexType name="competencias_socio_profesionales1">
         <xs:sequence>
             <xs:element name="competencia" maxOccurs="unbounded">
                 <xs:complexType>
                     <xs:sequence>
                         <xs:element name="nombre" type="xs:string"/>
-                        <xs:element name="nivel" type="xs:string"/>
+                        <xs:element name="nivel" type="nivel_COMPETENCIA"  />
                     </xs:sequence>
                 </xs:complexType>
             </xs:element>
         </xs:sequence>
     </xs:complexType>
+    <!-- Nivel de competencia  -->
+    <xs:simpleType name="nivel_COMPETENCIA">
+        <xs:restriction base="xs:integer">
+            <xs:enumeration value="1" />
+            <xs:enumeration value="2" />
+            <xs:enumeration value="3" />
+            <xs:enumeration value="4" />
+            <xs:enumeration value="5" />
+        </xs:restriction>
+    </xs:simpleType>
+ <!-- TIPO DE NIF -->
+    <xs:simpleType name="tipo_nif">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="[0-9]{8}[A-Z]{1}" />
+  </xs:restriction>
+</xs:simpleType>
 
-     <!-- LOS DATOS ADICIONALES -->
+    <!-- LOS DATOS ADICIONALES -->
     <xs:complexType name="datos_adicionales1">
         <xs:sequence>
             <xs:element name="aficiones" minOccurs="0">
@@ -138,26 +152,25 @@
             <xs:element  name="licencias_permisosDecond" type="tipo_licencia"/>
         </xs:sequence>
     </xs:complexType>
-    
-      
-      <xs:simpleType name="tipo_licencia">
+
+     <!-- Tipos de licencias -->
+    <xs:simpleType name="tipo_licencia">
         <xs:restriction base="xs:string">
-          <xs:enumeration value="AM" />
-          <xs:enumeration value="A1" />
-          <xs:enumeration value="A2" />
-          <xs:enumeration value="A" />
-          <xs:enumeration value="B" />
-          <xs:enumeration value="B+E" />
-          <xs:enumeration value="C1" />
-          <xs:enumeration value="C" />
-          <xs:enumeration value="D1" />
-          <xs:enumeration value="D1+E" />
-          <xs:enumeration value="D" />
-          <xs:enumeration value="BTP" />
+            <xs:enumeration value="AM" />
+            <xs:enumeration value="A1" />
+            <xs:enumeration value="A2" />
+            <xs:enumeration value="A" />
+            <xs:enumeration value="B" />
+            <xs:enumeration value="B+E" />
+            <xs:enumeration value="C1" />
+            <xs:enumeration value="C" />
+            <xs:enumeration value="D1" />
+            <xs:enumeration value="D1+E" />
+            <xs:enumeration value="D" />
+            <xs:enumeration value="BTP" />
         </xs:restriction>
-      </xs:simpleType>
-      
-         <!-- LOS VALORES POSIBLES EN NIVEL DEL TITULO DE IDIOMAS -->
+    </xs:simpleType>
+    <!-- LOS VALORES POSIBLES EN NIVEL DEL TITULO DE IDIOMAS -->
     <xs:simpleType name="nivel_idioma">
         <xs:restriction base="xs:string">
             <xs:enumeration value="bajo" />
@@ -165,16 +178,14 @@
             <xs:enumeration value="alto" />
         </xs:restriction>
     </xs:simpleType>
-
     <xs:simpleType name="nivel_titulo">
-  <xs:restriction base="xs:string">
-    <xs:enumeration value="A1"/>
-    <xs:enumeration value="A2"/>
-    <xs:enumeration value="B1"/>
-    <xs:enumeration value="B2"/>
-    <xs:enumeration value="C1"/>
-    <xs:enumeration value="C2"/>
-  </xs:restriction>
-</xs:simpleType>
-
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A1"/>
+            <xs:enumeration value="A2"/>
+            <xs:enumeration value="B1"/>
+            <xs:enumeration value="B2"/>
+            <xs:enumeration value="C1"/>
+            <xs:enumeration value="C2"/>
+        </xs:restriction>
+    </xs:simpleType>
 </xs:schema>
