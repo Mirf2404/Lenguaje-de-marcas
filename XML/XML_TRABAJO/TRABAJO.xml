@@ -68,6 +68,6 @@
         </aficiones>
         <disponibilidad_viajar>true</disponibilidad_viajar>
         <vehiculo_propio>true</vehiculo_propio>
-        <licencias_permisosDecond></licencias_permisosDecond>
+        <licencias_permisosDecond>A1</licencias_permisosDecond>
     </datos_adicionales>
 </curriculum>

@@ -15,6 +15,7 @@
             </xs:sequence>
         </xs:complexType>
      <!-- LOS DATOS PERSONALES -->
+     
     <xs:complexType name="datos_personales1">
         <xs:sequence>
             <xs:element name="nombre" type="xs:string"/>
@@ -134,10 +135,28 @@
             </xs:element>
             <xs:element name="disponibilidad_viajar" type="xs:boolean" minOccurs="0"/>
             <xs:element name="vehiculo_propio" type="xs:boolean" minOccurs="0"/>
-            <xs:element  name="licencias_permisosDecond" type="xs:string"/>
+            <xs:element  name="licencias_permisosDecond" type="tipo_licencia"/>
         </xs:sequence>
     </xs:complexType>
- 
+    
+      
+      <xs:simpleType name="tipo_licencia">
+        <xs:restriction base="xs:string">
+          <xs:enumeration value="AM" />
+          <xs:enumeration value="A1" />
+          <xs:enumeration value="A2" />
+          <xs:enumeration value="A" />
+          <xs:enumeration value="B" />
+          <xs:enumeration value="B+E" />
+          <xs:enumeration value="C1" />
+          <xs:enumeration value="C" />
+          <xs:enumeration value="D1" />
+          <xs:enumeration value="D1+E" />
+          <xs:enumeration value="D" />
+          <xs:enumeration value="BTP" />
+        </xs:restriction>
+      </xs:simpleType>
+      
          <!-- LOS VALORES POSIBLES EN NIVEL DEL TITULO DE IDIOMAS -->
     <xs:simpleType name="nivel_idioma">
         <xs:restriction base="xs:string">
