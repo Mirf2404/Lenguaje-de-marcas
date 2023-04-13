@@ -40,12 +40,12 @@
     <idiomas>
         <idioma>
             <nombre></nombre>
-            <expresion_oral></expresion_oral>
+            <expresion_oral>alto</expresion_oral>
             <comprension_oral></comprension_oral>
             <expresion_escrita></expresion_escrita>
             <comprension_escrita></comprension_escrita>
             <titulo_acreditativo></titulo_acreditativo>
-            <nivel_titulo>alto</nivel_titulo>
+            <nivel_titulo>A1</nivel_titulo>
         </idioma>
     </idiomas>
     <experiencia_laboral>
