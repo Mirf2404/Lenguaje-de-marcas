@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"  elementFormDefault="qualified" targetNamespace="ejer" xmlns="ejer" >
+    <xs:element name="curriculum" type="q">
+       
+    </xs:element> 
+    <xs:complexType name="q">
+            <xs:sequence>
+                <xs:element name="datos_perso" type="datos_personales1"/>
+                <xs:element name="datos_contacto" type="datos_contacto1"/>
+                <xs:element name="formacion_academica" type="formacion_academica1"/>
+                <xs:element name="idiomas" type="idiomas1"/>
+                <xs:element name="experiencia_laboral" type="experiencia_laboral1"/>
+                <xs:element name="competencias_socio_profesionales" type="competencias_socio_profesionales1"/>
+                <xs:element name="datos_adicionales" type="datos_adicionales1"/>
+            </xs:sequence>
+        </xs:complexType>
+     <!-- LOS DATOS PERSONALES -->
+    <xs:complexType name="datos_personales1">
+        <xs:sequence>
+            <xs:element name="nombre" type="xs:string"/>
+            <xs:element name="apellidos" type="xs:string"/>
+            <xs:element name="fecha_nacimiento" type="xs:date"/>
+            <xs:element name="lugar_nacimiento" type="xs:string"/>
+            <xs:element name="nacionalidades" type="nacionalidades1"/>
+            <xs:element name="num_identificacion" type="xs:string"/>
+            <xs:element name="foto_archivo" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+      <!-- LA NACIONALIDAD -->
+    <xs:complexType name="nacionalidades1">
+        <xs:sequence>
+            <xs:element name="nacionalidad" type="xs:string" />
+        </xs:sequence>
+    </xs:complexType>
+     <!-- DATOS DE CONTACTO -->
+    <xs:complexType name="datos_contacto1">
+        <xs:sequence>
+            <xs:element name="tipo_via" type="xs:string"/>
+            <xs:element name="nombre_via" type="xs:string"/>
+            <xs:element name="numero" type="xs:integer" minOccurs="0"/>
+            <xs:element name="portal" type="xs:integer" minOccurs="0"/>
+            <xs:element name="escalera" type="xs:string" minOccurs="0"/>
+            <xs:element name="piso" type="xs:integer" minOccurs="0"/>
+            <xs:element name="puerta" type="xs:string" minOccurs="0"/>
+            <xs:element name="codigo_postal" type="xs:string"/>
+            <xs:element name="pais" type="xs:string"/>
+            <xs:element name="email" type="xs:string"/>
+            <xs:element name="telefono_movil" type="xs:string"/>
+            <xs:element name="telefono_fijo" type="xs:string" minOccurs="0"/>
+            <xs:element name="pagina_web" type="xs:string" minOccurs="0"/>
+            <xs:element name="redes_sociales" type="redes_sociales1" minOccurs="0"/>
+        </xs:sequence>
+    </xs:complexType>
+
+     <!-- LAS REDES SOCIALES -->
+    <xs:complexType name="redes_sociales1">
+        <xs:sequence>
+            <xs:element name="red_social" type="xs:string" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+
+     <!-- LAS FORMACIONES ACADEMICAS -->
+    <xs:complexType name="formacion_academica1">
+        <xs:sequence>
+            <xs:element name="estudios" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="lugar_realizacion" type="xs:string"/>
+                        <xs:element name="fecha_inicio" type="xs:date"/>
+                        <xs:element name="fecha_fin" type="xs:date"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- LOS IDIOMAS -->
+    <xs:complexType name="idiomas1">
+        <xs:sequence>
+            <xs:element name="idioma" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="expresion_oral" type="xs:string" minOccurs="0"/>
+                        <xs:element name="comprension_oral" type="xs:string" minOccurs="0"/>
+                        <xs:element name="expresion_escrita" type="xs:string" minOccurs="0"/>
+                        <xs:element name="comprension_escrita" type="xs:string" minOccurs="0"/>
+                        <xs:element name="titulo_acreditativo" type="xs:string" minOccurs="0"/>
+                         <!-- NIVEL IDIOMA ALTO/MEDIO/BAJO -->
+                        <xs:element name="nivel_titulo" type="nivel_idioma" minOccurs="1"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+     <!-- LA EXPERIENCIA LABORAL -->
+    <xs:complexType name="experiencia_laboral1">
+        <xs:sequence>
+            <xs:element name="experiencia" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="lugar" type="xs:string"/>
+                        <xs:element name="puesto" type="xs:string"/>
+                        <xs:element name="fecha_inicio" type="xs:date"/>
+                        <xs:element name="fecha_fin" type="xs:date"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+     <!-- LAS competencias socio profesionales-->
+    <xs:complexType name="competencias_socio_profesionales1">
+        <xs:sequence>
+            <xs:element name="competencia" maxOccurs="unbounded">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="nombre" type="xs:string"/>
+                        <xs:element name="nivel" type="xs:string"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+     <!-- LOS DATOS ADICIONALES -->
+    <xs:complexType name="datos_adicionales1">
+        <xs:sequence>
+            <xs:element name="aficiones" minOccurs="0">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="aficion" type="xs:string" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="disponibilidad_viajar" type="xs:boolean" minOccurs="0"/>
+            <xs:element name="vehiculo_propio" type="xs:boolean" minOccurs="0"/>
+            <xs:element  name="licencias_permisosDecond" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+ 
+         <!-- LOS VALORES POSIBLES EN NIVEL DEL TITULO DE IDIOMAS -->
+    <xs:simpleType name="nivel_idioma">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="bajo" />
+            <xs:enumeration value="medio" />
+            <xs:enumeration value="alto" />
+        </xs:restriction>
+    </xs:simpleType>
+    
+</xs:schema>
